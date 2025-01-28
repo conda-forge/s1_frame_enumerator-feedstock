@@ -1,3 +1,4 @@
+{% set python_min = '3.11' %}
 {% set name = "s1_frame_enumerator" %}
 {% set version = "0.0.1" %}
 
@@ -6,22 +7,22 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/s1_frame_enumerator-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/s1_frame_enumerator-{{ version }}.tar.gz
   sha256: fae50274cfffdb6e350db2d3adbabde8c251b99623225fc283d6e0327e1b3397
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.11
+    - python {{ python_min }}
     - setuptools >=60
     - setuptools-scm >=8.0
     - pip
   run:
-    - python >=3.11
+    - python >={{ python_min }}
     - geopandas
     - rasterio
     - asf_search
@@ -36,6 +37,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/ACCESS-Cloud-Based-InSAR/s1_frame_enumerator
