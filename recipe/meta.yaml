@@ -29,6 +29,9 @@ requirements:
     - tqdm
     - requests
     - shapely >=2.0
+    - contextily
+    - ruff
+    - pyarrow
 
 test:
   imports:
