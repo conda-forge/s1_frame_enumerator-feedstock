@@ -1,6 +1,6 @@
-{% set python_min = '3.11' %}
+{% set python_min = "3.11" %}
 {% set name = "s1_frame_enumerator" %}
-{% set version = "0.0.1" %}
+{% set version = "0.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/s1_frame_enumerator-{{ version }}.tar.gz
-  sha256: fae50274cfffdb6e350db2d3adbabde8c251b99623225fc283d6e0327e1b3397
+  sha256: d186ba98b2d945d8d59ba4d35cca85bff6943b7e03bcb64165ecafcfa00869de
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
