@@ -27,7 +27,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-s1_frame_enumerator-green.svg)](https://anaconda.org/conda-forge/s1_frame_enumerator) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/s1_frame_enumerator.svg)](https://anaconda.org/conda-forge/s1_frame_enumerator) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/s1_frame_enumerator.svg)](https://anaconda.org/conda-forge/s1_frame_enumerator) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/s1_frame_enumerator.svg)](https://anaconda.org/conda-forge/s1_frame_enumerator) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-s1__frame__enumerator-green.svg)](https://anaconda.org/conda-forge/s1_frame_enumerator) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/s1_frame_enumerator.svg)](https://anaconda.org/conda-forge/s1_frame_enumerator) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/s1_frame_enumerator.svg)](https://anaconda.org/conda-forge/s1_frame_enumerator) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/s1_frame_enumerator.svg)](https://anaconda.org/conda-forge/s1_frame_enumerator) |
 
 Installing s1_frame_enumerator
 ==============================
